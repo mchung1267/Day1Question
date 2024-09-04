@@ -6,8 +6,8 @@ public class questionTwo {
         int totalValue = 0;
         String totalNum = sc.nextLine();
         String[] numbers = totalNum.split(" ");
-        for(int i = 0; i < numbers.length; i++){
-            totalValue += (int) Math.pow(Integer.parseInt(numbers[i]), 2);
+        for (String number : numbers) {
+            totalValue += (int) Math.pow(Integer.parseInt(number), 2);
         }
         System.out.println(totalValue % 10);
     }
